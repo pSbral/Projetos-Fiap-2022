@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+:root {
+    --text-color: #fff;
+    --page-color: #FFEBCF;
+    --header-color: #684442;
+} 
+
+body {
+    background: var(--page-color);
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.pageHeader {
+    background: var(--header-color);
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 20px 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageHeader header {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.pageTitle {
+    display: flex;
+    align-items: center;
+}
+
+.pageTitle header {
+    margin-left: 20px;
+}
+
+.pageContent {
+    margin: 30px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contentHeader {
+    width: 100%;
+    display: flex;
+    text-align: justify;
+}
+
+.contentHeaderText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: center;
+}
+
+.contentHeaderText h2 {
+    font-size: 40px;
+    color: var(--header-color);
+    margin-bottom: 20px;
+}
+
+.contentHeaderText a {
+    display: flex;
+    text-decoration: none;
+    color: var(--page-color);
+    font-weight: bold;
+    background: var(--header-color);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentHeaderText {
+    line-height: 150%;
+}
+
+.contentDescription {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentDescriptionOptions {
+    display: flex;
+    border: var(--header-color) 2px dotted;
+    color: var(--header-color);
+    width: 30%;
+    height: 15vh;
+    margin-top: 30px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contentDescriptionOptions h2 {
+    margin-top: 10px;
+    font-size: 30px;
+}
