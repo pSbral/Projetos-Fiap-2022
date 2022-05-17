@@ -1,0 +1,356 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variáveis */
+:root {
+    --bg-dark: #000;
+    --light: #fff;
+    --hover: #dc143c;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+/* Formatações genéricas */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--hover);
+}
+
+
+
+
+/* formatação do header */
+
+.header-page {
+    width: 100%;
+    height: 8rem;
+    /* background-color: #f60; */
+    display: flex;
+
+    /* posição inicial dos filhos */
+    flex-direction: row;
+
+    /* alinhamento vertical */
+    align-items: center;
+
+    /* alinhamento horizontal */
+    justify-content: space-between;
+
+    padding: 0 1rem;
+
+    /* posicionando o menu */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header-title {
+    color: var(--light);
+    font-size: 7vmin;
+}
+
+.logo {
+    color: var(--hover);
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+
+
+
+
+/* fim formatação do header */
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/****************************** hero ***********************************/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(85, 85, 85);
+}
+
+.hero-title {
+    color: var(--light);
+    font-size: 8vmin;
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    color: var(--light);
+    width: 60%;
+    margin-bottom: 5rem;
+}
+
+.btn {
+    border: 1px solid var(--hover);
+    background-color: var(--hover);
+    color: var(--light);
+    padding: 1rem 2rem;
+    border-radius: 7rem;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--hover);
+}
+
+/****************************** fim hero *******************************/
+
+
+/****************************** tech *******************************/
+.tech {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.tech-item {
+    width: 30%;
+    min-height: 50rem;
+    border: 1px solid var(--hover);
+    border-radius: 7px;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3%;
+}
+
+.tech-icone {
+    font-size: 5rem;
+    color: var(--hover);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.tech-icone:hover {
+    transform: rotate(1440deg);
+}
+
+.tech-title {
+    margin: 3rem 0;
+}
+
+.tech-text {
+    margin: 3rem 0;
+    text-align: justify;
+
+}
+
+/****************************** fim tech **************************/
+
+
+/****************************** solution **************************/
+.solution {
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6rem;
+}
+
+.solution-box {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-box h2 {
+    margin: 2rem 0;
+    font-size: 6vmin;
+}
+
+.span-solution {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.span-solution::after {
+    content: 'Agronegócio';
+    animation: solution infinite 5s;
+}
+
+.solution h2 {
+    text-align: center;
+}
+
+@keyframes solution {
+
+    20% {
+        content: 'Indústria';
+    }
+
+    40% {
+        content: 'Educação';
+    }
+
+    60% {
+        content: 'Sáude';
+    }
+
+    80% {
+        content: 'Transporte';
+    }
+
+}
+
+
+
+.solution-box p {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+/****************************** fim solution *********************/
+
+/****************************** gallery   ************************/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+
+.gallery-item {
+    width: 22%;
+    background-color: var(--light);
+    padding: 1rem 1rem 2rem 1rem;
+    transition: .5s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item figcaption {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+/****************************** fim gallery *********************/
+
+
+
+/* imagens de fundo */
+.bg-image-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, 0)),
+        url(../images/pexels-daniel-putzer-633409.jpg);
+}
+
+.bg-image-2 {
+    background-image: linear-gradient(to top, rgba(87, 29, 29, 0.8), rgba(0, 0, 0, 0)),
+        url(../images/pexels-negative-space-34140.jpg);
+}
+
+.bg-image-3 {
+    background-image: url(../images/pexels-picjumbocom-196659.jpg);
+}
+
+.bg-color-1 {
+    background-color: var(--bg-dark);
+    z-index: -1;
+}
+
+/* Começando a pensar no responsivo  */
+
+@media(max-width:1000px) {
+    .header-page {
+        background: rgba(0, 0, 0, .8);
+    }
+}
+
+@media(max-width:768px) {
+    .header-title {
+        font-size: 6vmin;
+    }
+
+    html {
+        font-size: 45%;
+    }
+
+    .header-page {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+}
+
+@media(max-width:425px) {
+    .header-page {
+        height: +10%;
+        flex-direction: column;
+    }
+
+    .tech-item {
+        border: none;
+        border-radius: 0;
+    }
+
+    .tech-item+.tech-item {
+        border: none;
+        border-radius: none;
+        border-left: solid 1px var(--hover);
+    }
+}
