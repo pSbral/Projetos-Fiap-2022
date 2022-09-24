@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Raleway:wght@200;300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <title>Site Teste</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="d-flex flex-column align-items-center felipe-header">
+        <!-- Navbar -->
+        <nav
+            class="d-flex navbar navbar-expand-lg navbar-border w90 navbar-glasmorphism px-4 d-flex justify-content-between">
+            <div class="p-0 m-0 d-flex justify-content-between navbar-size-adjustment">
+                <a href="" class="text-decoration-none pocas-logo m-0">P O C A S</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation" id="color-white">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-size-fullscreen" id="navbarNavAltMarkup">
+                <div class="d-flex navbar-nav justify-content-between navbar-item-space navbar-adaptation">
+                    <a class="nav-link text-light navbar-item" href="#">home</a>
+                    <a class="nav-link text-light navbar-item" href="#">galeria</a>
+                    <a class="nav-link text-light navbar-item" href="#">pricing</a>
+                    <a class="nav-link text-light navbar-item" href="#">disabled</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="row d-flex py-5 w90">
+            <!-- ESQUERDA -->
+            <div class="d-flex flex-column justify-content-around col-sm-12 col-md-6 text-light p-0">
+                <div style="width: 95%;">
+                    <h2 class="header-text">APRESENTAÇÃO DO PROJETO <span class="felipe-text">FELIPE</span></h2>
+                    <p class="sub-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim dicta
+                        reprehenderit quisquam
+                        laborum sit mollitia dolor? Quam, aliquid perferendis.</p>
+                </div>
+            </div>
+
+            <!-- DIREITA -->
+            <div class="d-flex col-sm-12 col-md-6 p-0 pt-5 align-items-end div-img-felipe">
+                <img src="images/FELIPE.png" class="img-fluid my-5" style="width: 70%; height: auto;" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center my-5">
+        <h2 class="section-title mb-5 pb-2 px-4">GALERIA DE IMAGENS</h2>
+
+        <!-- carrossel -->
+        <div class="p-5 bg-gallery rounded-4 d-flex" style="width: 60%;">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carrossel/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrossel/2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carrossel/3.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
