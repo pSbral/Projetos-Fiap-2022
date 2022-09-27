@@ -7,6 +7,8 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+    /* border: 1px solid red; */
 }
 
 /* Referencing <a> tag */
@@ -18,45 +20,8 @@ a:hover {
     color: var(--light-green);
 }
 
-/* media queries */
-@media screen and (min-width: 1080px) {
-    .navbar-adaptation {
-        width: 50%;
-    }
-
-    .navbar-size-fullscreen {
-        width: 50%;
-        display: flex;
-        justify-content: end;
-    }
-
-    .navbar-glasmorphism {
-        position: fixed;
-    }
-
-    .div-img-felipe {
-        justify-content: end;
-    }
-}
-
-@media screen and (max-width: 1080px) {
-    .navbar-size-adjustment {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 632px) {
-    .pocas-logo {
-        margin: auto;
-    }
-
-    .sub-header {
-        font-size: 0.4rem;
-    }
-
-    .div-img-felipe {
-        justify-content: center;
-    }
+.textLightGreen {
+    color: #bfcfd9;
 }
 
 .w90 {
@@ -87,9 +52,9 @@ a:hover {
 
 /* classes header */
 .header-text {
-    text-align: justify;
-    text-justify: auto;
-    font-size: 7.9vmin;
+    /* text-align: justify;
+    text-justify: auto; */
+    font-size: 7vmin;
     font-weight: 800;
     letter-spacing: .1rem;
 }
@@ -99,7 +64,7 @@ a:hover {
 }
 
 .section-title {
-    font-size: 3rem;
+    font-size: 7vmin;
     font-weight: 600;
 
     border-bottom: 1px solid var(--normal-green);
@@ -134,8 +99,45 @@ a:hover {
     -webkit-backdrop-filter: blur(7.7px);
 }
 
+
 .bg-gallery {
     background-color: rgb(19, 19, 19);
+}
+
+.img-history{
+    border-radius: 1rem;
+}
+
+footer {
+    background-color: black;
+}
+
+a i {
+    color: #bfcfd9;
+    transition: .3s;
+}
+
+a i:hover {
+    color: white;
+}
+
+.copyr {
+    font-size: 1.5vmin;
+    font-weight: 100;
+    letter-spacing: .3rem;
+}
+
+.fiap-footer {
+    font-size: 9vmin;
+    font-weight: 300;
+    letter-spacing: .5rem;
+}
+
+.footer-text {
+    color: #bfcfd9;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-size: 4vmin;
 }
 
 @-webkit-keyframes color-change {
@@ -219,4 +221,72 @@ a:hover {
     /* add border-radius */
     color: var(--white) !important;
     background-color: var(--white) !important;
+}
+
+#galery {
+    width: 60%;
+}
+
+
+/* media queries */
+@media (min-width: 1080px) {
+    .navbar-adaptation {
+        width: 50%;
+    }
+
+    .navbar-size-fullscreen {
+        width: 50%;
+        display: flex;
+        justify-content: end;
+    }
+
+    .navbar-glasmorphism {
+        position: fixed;
+    }
+
+    .div-img-felipe {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 1080px) {
+    .navbar-size-adjustment {
+        width: 100%;
+    }
+    #galery {
+        width: 90%;
+    }
+
+    .header-text {
+        font-size: 6vmin;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 7px !important;
+        width: 7px !important;
+    }
+
+    .div-img-felipe {
+        justify-content: end;
+    }
+}
+
+@media (max-width: 632px) {
+    .pocas-logo {
+        margin: auto;
+    }
+
+    .sub-header {
+        font-size: 0.6rem;
+    }
+
+    .div-img-felipe {
+        justify-content: center;
+    }
+
+    #galery {
+        width: 95%;
+        padding: 30px !important;
+    }
+    
 }
