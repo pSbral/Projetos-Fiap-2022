@@ -9,6 +9,8 @@
 * {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     /* border: 1px solid red; */
 }
 
@@ -33,6 +35,10 @@ a:hover {
 
 .w90 {
     width: 90%;
+}
+
+.w95 {
+    width: 95%;
 }
 
 /* classes navbar*/
@@ -104,10 +110,10 @@ a:hover {
 
 .navbar-glasmorphism {
     background: rgba(255, 255, 255, 0);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.7px);
+    backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(7.7px);
+    z-index: 5;
 }
 
 
@@ -116,11 +122,16 @@ a:hover {
 }
 
 .img-history{
-    border-radius: 1rem;
+    border-radius: 15px;
 }
 
 footer {
     background-color: black;
+}
+
+.p-main{
+    text-align: justify;
+    width: fit-content;
 }
 
 a i {
@@ -329,6 +340,11 @@ a i:hover {
     .textGray {
         font-size: .8rem;
     }
+
+    .p-main{
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 632px) {
@@ -365,6 +381,10 @@ a i:hover {
         margin-top: 2rem;
     }
 
+    .p-main{
+        width: 70%;
+    }
+
 }
 
 @media (min-width: 1920px) {
@@ -379,4 +399,9 @@ a i:hover {
         display: flex;
         margin: auto;
     }
+    
+    #gallery{
+        width: 100%;
+    }
 }
+
