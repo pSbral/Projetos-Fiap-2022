@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --felipe-white: #ECECEC;
+    --felipe-grey: #707070;
+    --felipe-green: #13FF00;
+    --felipe-black: #0F0F0F;
+}
+
+body {
+    background: var(--felipe-black);
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2vh 0 2vh 0;
+    margin: 0 5vh 0 5vh;
+
+    color: var(--felipe-white);
+
+    list-style: none;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.contentSeparation {
+    border-bottom: 1px solid var(--felipe-grey);
+    width: 150vh;
+    height: 5vh;
+}
+
+.poucasLogo {
+    font-weight: 600;
+    font-size: 2em;
+
+    cursor: pointer;
+
+    padding-left: 0.5em;
+
+    letter-spacing: 0.3em;
+
+    color: var(--felipe-green);
+}
+
+.pageNav {
+    display: flex;
+
+    padding-right: 2em;
+
+
+}
+
+.pageNav li+li {
+    padding-left: 5em;
+}
+
+.pageNav a {
+    letter-spacing: 0.1em;
+    text-decoration: none;
+
+    color: var(--felipe-white);
+
+    transition: .5s;
+}
+
+.pageNav a:hover {
+    color: var(--felipe-green);
+}
+
+.pageBanner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url(/media/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-bottom: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--felipe-white);
+
+    width: 100%;
+    height: 100vh;
+}
+
+.pageBanner h1 {
+    font-size: 5rem;
+    letter-spacing: 0.1em;
+    font-weight: 1000;
+}
+
+.pageBanner p {
+    letter-spacing: 0.05em;
+    line-height: 150%;
+    text-align: justify;
+
+    margin: 1em 0 1em 0;
+    width: 47%;
+}
+
+.pageBannerButtons {
+    margin: 2em 0 2em 0;
+}
+
+.pageBannerButtons a {
+    padding: 1em 4em 1em 4em;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+
+    transition: 0.5s;
+
+    border-radius: 1em;
+
+    background: var(--felipe-black);
+    text-decoration: none;
+    color: var(--felipe-white);
+}
+
+.pageBannerButtons a+a {
+    margin-left: 13em;
+}
+
+.pageBannerButtons a:hover {
+    color: var(--felipe-green);
+    box-shadow: 0.1em 0.1em 3em var(--felipe-black);
+}
+
+.pageGallery {
+    background: var(--felipe-black);
+
+    margin: 5vh 5vh 2vh 5vh;
+    padding: 5vh 0;
+    color: var(--felipe-white);
+
+    border-top: 1px solid var(--felipe-grey);
+}
+
+.pageGalleryPhotos {
+    display: flex;
+    margin: 5vh;
+}
+
+.pageGallery h2 {
+    padding-left: 2em;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+
+.galleryMainPhoto {
+    margin-right: 3vh;
+
+    height: 60vh;
+}
+
+.galleryMainPhoto img {
+    height: 100%;
+    border-radius: 2vh;
+}
+
+.galleryAlternatePhotos {
+    height: 60vh;
+    width: 100vh;
+}
+
+.galleryAlternatePhotos img {
+    margin: 0.3vh;
+    height: 49%;
+    width: 49%;
+
+    border-radius: 2vh;
+}
+
+.galleryAlternatePhotos img:hover,
+.galleryMainPhoto img:hover {
+    border: 3px solid var(--felipe-green);
+}
+
+.pageGrupo {
+    display: flex;
+    border-top: 1px solid var(--felipe-grey);
+
+    justify-content: center;
+
+    margin: 5vh 5vh 2vh 5vh;
+    padding: 15vh 0;
+}
+
+.Sobral {
+    background-image: url(/media/Sobral.png);
+}
+
+.Guty {
+    background-image: url(/media/Guty.png);
+}
+
+.Breno {
+    background-image: url(/media/Breno.png);
+}
+
+.Gabriel {
+    background-image: url(/media/Gabriel.png);
+}
+
+.Vini {
+    background-image: url(/media/Vini.png);
+}
+
+.integranteImg {
+    height: 20vh;
+    width: 20vh;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100%;
+    margin: 5vh;
+}
+
+.integranteBorda {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 50%;
+    background-clip: content-box;
+    animation: spin 10s linear infinite;
+
+    border: 2.5px dashed var(--felipe-green);
+}
+
+.grupoIntegrante {
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+
+    padding: 0 5vh 5vh 5vh;
+
+    color: var(--felipe-white);
+    text-align: center;
+    align-items: center;
+}
+
+.grupoIntegrante li {
+    list-style: none;
+}
+
+.grupoIntegrante+.grupoIntegrante {
+    border-left: 1px solid var(--felipe-grey);
+}
+
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--felipe-white);
+
+    height: 20vh;
+    width: 100%;
+}
+
+footer h1 {
+    font-weight: 600;
+    font-size: 3em;
+
+    cursor: pointer;
+
+    padding-left: 0.5em;
+
+    letter-spacing: 0.3em;
+
+    color: var(--felipe-black);
+}
