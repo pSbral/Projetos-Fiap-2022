@@ -3,11 +3,14 @@
     --normal-green: rgb(60, 209, 60);
     --dark-green: rgb(57, 131, 79);
     --white: white;
+    --gray: #bfcfd9;
 }
 
 * {
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     /* border: 1px solid red; */
 }
 
@@ -20,12 +23,22 @@ a:hover {
     color: var(--light-green);
 }
 
-.textLightGreen {
+.textStory {
+    color: #bfcfd9;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.textGray {
     color: #bfcfd9;
 }
 
 .w90 {
     width: 90%;
+}
+
+.w95 {
+    width: 95%;
 }
 
 /* classes navbar*/
@@ -63,6 +76,10 @@ a:hover {
     font-size: 0.8rem;
 }
 
+.bg-gray {
+    background-color: #bfcfd9;
+}
+
 .section-title {
     font-size: 7vmin;
     font-weight: 600;
@@ -93,32 +110,34 @@ a:hover {
 
 .navbar-glasmorphism {
     background: rgba(255, 255, 255, 0);
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.7px);
+    backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(7.7px);
+    z-index: 5;
 }
 
-.p-main{
-    width: 80%;
-    text-align: justify;
-}
 
 .bg-gallery {
     background-color: rgb(19, 19, 19);
 }
 
 .img-history{
-    border-radius: 1rem;
+    border-radius: 15px;
 }
 
 footer {
     background-color: black;
 }
 
+.p-main{
+    text-align: justify;
+    width: fit-content;
+}
+
 a i {
     color: #bfcfd9;
     transition: .3s;
+    font-size: 2.5rem;
 }
 
 a i:hover {
@@ -132,16 +151,17 @@ a i:hover {
 }
 
 .fiap-footer {
-    font-size: 9vmin;
+    font-size: 10vmin;
     font-weight: 300;
     letter-spacing: .5rem;
+    color: #bfcfd9;
 }
 
 .footer-text {
     color: #bfcfd9;
     font-weight: 300;
     letter-spacing: .2rem;
-    font-size: 4vmin;
+    font-size: 6vmin;
 }
 
 @-webkit-keyframes color-change {
@@ -227,9 +247,32 @@ a i:hover {
     background-color: var(--white) !important;
 }
 
+.accordion {
+    --bs-accordion-bg: #262626;
+    --bs-accordion-border-color: var(--light-green);
+    --bs-accordion-btn-color:var(--normal-green);
+    --bs-accordion-btn-focus-border-color: var(--dark-green);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--dark-green);
+    --bs-accordion-active-color: var(--normal-green);
+    --bs-accordion-active-bg: #262626;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='var%28--bs-body-color%29'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    
+}
+
+.accordionTitle {
+    font-weight: 500;
+    font-size: 2.5rem;
+    
+    
+    letter-spacing: 1rem;
+}
+
 #galery {
     width: 60%;
 }
+
+
 
 
 /* media queries */
@@ -253,16 +296,18 @@ a i:hover {
     }
 }
 
+@media (max-width: 1024px) {
+    .img-history {
+        display: none;
+    }
+}
+
 @media (max-width: 1080px) {
     .navbar-size-adjustment {
         width: 100%;
     }
     #galery {
         width: 90%;
-    }
-
-    .p-main{
-        width: 70%;
     }
 
     .header-text {
@@ -277,15 +322,34 @@ a i:hover {
     .div-img-felipe {
         justify-content: end;
     }
+
+    a i {
+        font-size: 2.3rem;
+    }
+
+    .textStory {
+        margin-bottom: 3rem;
+    }
+
+    .img-history {
+        width: 50%;
+        display: flex;
+        margin: auto;
+    }
+
+    .textGray {
+        font-size: .8rem;
+    }
+
+    .p-main{
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 632px) {
     .pocas-logo {
         margin: auto;
-    }
-
-    .p-main{
-        width: 70%;
     }
 
     .sub-header {
@@ -300,5 +364,44 @@ a i:hover {
         width: 95%;
         padding: 30px !important;
     }
+
+    .fiap-footer {
+        font-size: 3.5rem;
+    }
+
+    .textStory {
+        font-size: .8rem;
+    }
+
+    .img-history {
+        width: 80%;
+    }
     
+    .textGray {
+        margin-top: 2rem;
+    }
+
+    .p-main{
+        width: 70%;
+    }
+
 }
+
+@media (min-width: 1920px) {
+    .textStory {
+        width: 90%;
+        margin: auto;
+        display: flex;
+    }
+
+    .img-history {
+        width: 63%;
+        display: flex;
+        margin: auto;
+    }
+    
+    #gallery{
+        width: 100%;
+    }
+}
+
