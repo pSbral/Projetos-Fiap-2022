@@ -30,6 +30,28 @@ a:hover {
     text-align: justify;
 }
 
+.text-normal-green {
+    color: var(--normal-green);
+}
+
+.gallery-item-event {
+    transition: .5s;
+
+}
+
+.gallery-item-event:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.p-event {
+    text-align: justify;
+}
+
+.textGray {
+    color: #bfcfd9;
+}
+
 .text-gray {
     color: var(--gray);
 }
