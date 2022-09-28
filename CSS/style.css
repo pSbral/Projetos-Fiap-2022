@@ -11,7 +11,7 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    /*border: 1px solid red;*/
 }
 
 /* Referencing <a> tag */
@@ -26,6 +26,24 @@ a:hover {
 .textStory {
     color: #bfcfd9;
     font-size: 1.3rem;
+    text-align: justify;
+}
+
+.text-normal-green {
+    color: var(--normal-green);
+}
+
+.gallery-item-event {
+    transition: .5s;
+    
+}
+
+.gallery-item-event:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.p-event {
     text-align: justify;
 }
 
@@ -162,6 +180,10 @@ a i:hover {
     font-weight: 300;
     letter-spacing: .2rem;
     font-size: 6vmin;
+}
+
+.card {
+    background-color: transparent !important;
 }
 
 @-webkit-keyframes color-change {
@@ -345,6 +367,10 @@ a i:hover {
         width: 80%;
     }
 
+    .card {
+        width: 50%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 632px) {
@@ -383,6 +409,10 @@ a i:hover {
 
     .p-main{
         width: 70%;
+    }
+    .card {
+        width: 50%;
+        margin: auto;
     }
 
 }
