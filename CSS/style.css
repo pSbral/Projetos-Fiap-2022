@@ -3,6 +3,7 @@
     --normal-green: rgb(60, 209, 60);
     --dark-green: rgb(57, 131, 79);
     --white: white;
+    --dark-gray: rgb(34, 34, 34);
     --gray: #bfcfd9;
 }
 
@@ -45,6 +46,12 @@ a:hover {
     width: 95%;
 }
 
+.page_background {
+    background-image: url("../images/page_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* classes navbar*/
 .navbar-border {
     z-index: 1;
@@ -85,10 +92,10 @@ a:hover {
 }
 
 .section-title {
-    font-size: 7vmin;
+    font-size: 6vmin;
     font-weight: 600;
 
-    border-bottom: 1px solid var(--normal-green);
+    border-bottom: 2px solid var(--normal-green);
 
     -webkit-animation: color-change 5s infinite;
     -moz-animation: color-change 5s infinite;
@@ -107,9 +114,7 @@ a:hover {
 }
 
 .felipe-header {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url("../images/header-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
 }
 
 .navbar-glasmorphism {
@@ -121,8 +126,19 @@ a:hover {
 }
 
 
-.bg-gallery {
-    background-color: rgb(19, 19, 19);
+.bg-dark-gray {
+    background-color: var(--dark-gray);
+}
+
+.bg-clear {
+    background-color: #e6e6e6;
+}
+
+.dark-title {
+    font-size: 6vmin;
+    font-weight: 600;
+    border-bottom: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
 }
 
 .img-history {
@@ -303,7 +319,7 @@ a i:hover {
 
 .accordionTitle {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 4vmin;
     letter-spacing: 0.3rem;
 }
 
@@ -422,6 +438,9 @@ a i:hover {
         width: 70%;
     }
 
+    .accordionTitle {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1920px) {
