@@ -323,6 +323,7 @@ a i:hover {
     display: inline-block;
     color: var(--normal-green);
     text-decoration: none;
+    font-size: 3vmin;
 }
 
 .cool-link::after {
