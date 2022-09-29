@@ -363,14 +363,6 @@ a i:hover {
     border: 1px dashed var(--light-green);
 }
 
-.card {
-    transition: .5s;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
 
 textarea {
     resize: none;
@@ -381,22 +373,40 @@ textarea {
     border-radius: 50%;
     border: 2px dashed var(--normal-green);
     padding: 10px;
-    animation: spin 10s infinite linear;
+    
 }
 
 .equipe-border img {
-    animation: spin 10s infinite reverse linear;
     width: 100%;
     border-radius: 50%;
 }
 
-.border-none {
-    border: none;
+.container-felipe {
+    height: 15vmin;
 }
 
-.letter-spacing {
-    letter-spacing: 0.2rem;
+.btn-primary {
+    color: var(--normal-green) !important;
+    background-color: black !important;
+    border: none;
+    transition: .3s;
 }
+
+.btn-primary:hover {
+    transform: scale(1.2);
+}
+
+
+.border-none {
+    border: none;
+    transition: .5s;
+}
+
+.border-none:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 @keyframes spin {
     100% {
