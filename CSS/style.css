@@ -353,6 +353,33 @@ a i:hover {
     width: 60%;
 }
 
+.grupo-img {
+    border-radius: 50%;
+    width: 80%;
+}
+
+.icon-grupo {
+    font-size: 2rem;
+}
+
+.borda-grupo {
+    border: 1px dashed var(--light-green);
+}
+
+.card {
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 150px !important;
+}
+
 /* media queries */
 @media (min-width: 1080px) {
     .navbar-adaptation {
@@ -372,13 +399,13 @@ a i:hover {
     .div-img-felipe {
         justify-content: end;
     }
-}
-
-@media (max-width: 1024px) {
-    .img-history {
+    
+    .col-lg-2 {
         display: none;
     }
 }
+
+
 
 @media (max-width: 1080px) {
     .navbar-size-adjustment {
@@ -425,8 +452,22 @@ a i:hover {
     }
 
     .card {
-        width: 50%;
+        width: 80%;
         margin: auto;
+    }    
+
+    .col-1 {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 60%;
+        margin: auto;
+    }
+    .col-lg-2 {
+        display: none;
     }
 }
 
@@ -476,6 +517,9 @@ a i:hover {
     .accordionTitle {
         font-size: 1rem;
     }
+    .col-lg-2 {
+        display: none;
+    }
 }
 
 @media (min-width: 1920px) {
@@ -493,5 +537,8 @@ a i:hover {
 
     #gallery {
         width: 100%;
+    }
+    .col-lg-2 {
+        display: none;
     }
 }

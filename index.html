@@ -22,8 +22,11 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!-- lightbox -->
     <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/x-icon">
 
     <title>FELIPE - Robocup 2022</title>
 </head>
@@ -35,7 +38,7 @@
         <nav class="d-flex navbar navbar-expand-lg navbar-border w95 navbar-glasmorphism px-4 d-flex justify-content-between"
             id="header">
             <div class="p-0 m-0 d-flex justify-content-between navbar-size-adjustment">
-                <a href="" class="text-decoration-none pocas-logo m-0">P O C A S</a>
+                <a href="#" class="text-decoration-none pocas-logo m-0">P O C A S</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation" id="color-white">
@@ -45,11 +48,11 @@
 
             <div class="collapse navbar-collapse navbar-size-fullscreen" id="navbarNavAltMarkup">
                 <div class="d-flex navbar-nav justify-content-between navbar-item-space navbar-adaptation">
-                    <a class="nav-link text-light navbar-item" href="#">projeto</a>
+                    <a class="nav-link text-light navbar-item" href="#sobre">sobre</a>
                     <a class="nav-link text-light navbar-item" href="#hardware">hardware</a>
-                    <a class="nav-link text-light navbar-item" href="#galery">galeria</a>
                     <a class="nav-link text-light navbar-item" href="#evento">evento</a>
-                    <a class="nav-link text-light navbar-item" href="#">contato</a>
+                    <a class="nav-link text-light navbar-item" href="#invest">seja socio</a>
+                    <a class="nav-link text-light navbar-item" href="#contato">contato</a>
                 </div>
             </div>
         </nav>
@@ -69,13 +72,13 @@
 
             <!-- DIREITA -->
             <div class="d-flex col-sm-12 col-md-6 p-0 pt-5 align-items-end div-img-felipe">
-                <img src="images/FELIPE.png" class="img-fluid my-5" style="width: 70%; height: auto;" alt="">
+                <img src="images/FELIPE.png" class="img-fluid my-5" style="width: 70%; height: auto;" alt="Imagem do robô Felipe com a arma recolhida">
             </div>
         </section>
     </div>
 
     <!-- storytelling -->
-    <article class="container-fluid d-flex flex-column align-items-center py-5 bg-dark-gray">
+    <article class="container-fluid d-flex flex-column align-items-center py-5 bg-dark-gray" id="sobre">
         <h2 class="section-title mb-5 pb-2 px-4">HISTÓRIA</h2>
 
         <div class="row">
@@ -106,7 +109,7 @@
                     teve.</p>
             </div>
             <div class="col-sm-12 col-lg-12 col-md-12 col-xl-4 px-5">
-                <img src="./images/pexels-thisisengineering-3913025.jpg" alt="" class="img-fluid img-history">
+                <img src="./images/pexels-thisisengineering-3913025.jpg" alt="imagem de um braço mecanico" class="img-fluid img-history">
             </div>
         </div>
     </article>
@@ -246,13 +249,13 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="images/carrossel/1.png" class="d-block w-100" alt="...">
+                            <img src="images/carrossel/1.png" class="d-block w-100" alt="construção do felipe, três mãos dentro do robô mexendo nele">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/carrossel/2.png" class="d-block w-100" alt="...">
+                            <img src="images/carrossel/2.png" class="d-block w-100" alt="integrante do grupo mexendo na programação arduino do projeto">
                         </div>
                         <div class="carousel-item">
-                            <img src="images/carrossel/3.png" class="d-block w-100" alt="...">
+                            <img src="images/carrossel/3.png" class="d-block w-100" alt="outro integrante do grupo soldando os fios do robo">
                         </div>
                         <div class="carousel-item">
                             <img src="images/carrossel/3.png" class="d-block w-100" alt="...">
@@ -271,8 +274,9 @@
 
     <section class="container-fluid d-flex flex-column align-items-center py-5 bg-dark-gray" id="evento">
         <h2 class="section-title px-4">FIAP NEXT E ROBOCUP</h2>
+    </section>
 
-        <article class="container-fluid pb-5 bg-gallery text-center textGray">
+        <article class="container-fluid pb-5 bg-gallery text-center textGray bg-dark-gray">
             <div class="row">
                 <div class="col-lg-6 col-md-12 mt-3 px-5">
                     <h2 class="text-normal-green">NEXT</h2>
@@ -283,7 +287,7 @@
                         devices, aplicativos
                         mobiles e muito mais. O NEXT FIAP Festival 2022 acontecerá no Espaço Arca na Vila
                         Leopoldina, em 22
-                        de outubro</p>
+                        de outubro.</p>
                 </div>
 
                 <div class="col-lg-6 col-md-12 mt-3 px-5">
@@ -310,147 +314,215 @@
                 <div class="row my-5">
                     <div class="col-lg-6 col-md-6 col-sm-12 my-4 px-5">
                         <a href="./images/robocup.jpg" data-lightbox="gallery">
-                            <img src="./images/robocup.jpg" alt="" class="img-fluid gallery-item-event scale">
+                            <img src="./images/robocup.jpg" alt="foto de dois alunos se enfrentando em uma robocup anterior" class="img-fluid gallery-item-event scale">
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 my-4 px-5">
                         <a href="./images/20141105_fiap_next_0489.jpg" data-lightbox="gallery">
-                            <img src="./images/20141105_fiap_next_0489.jpg" alt=""
+                            <img src="./images/20141105_fiap_next_0489.jpg" alt="festival next de um ano anterior"
                                 class="img-fluid gallery-item-event scale">
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 my-4 px-5">
                         <a href="./images/materia8.jpg" data-lightbox="gallery">
-                            <img src="./images/materia8.jpg" alt="" class="img-fluid gallery-item-event scale">
+                            <img src="./images/materia8.jpg" alt="outra foto de um next anterior" class="img-fluid gallery-item-event scale">
                         </a>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 my-4 px-5">
                         <a href="./images/next.jpg" data-lightbox="gallery">
-                            <img src="./images/next.jpg" alt="" class="img-fluid gallery-item-event scale">
+                            <img src="./images/next.jpg" alt="luta entre dois alunos na robocup" class="img-fluid gallery-item-event scale">
                         </a>
                     </div>
 
                 </div>
             </figure>
         </article>
-    </section>
+    
 
 
     <!-- Article sistemas de informação -->
-    <article class="d-flex flex-column align-items-center py-5 ">
+    <article class="d-flex flex-column align-items-center py-5" id="invest">
         <h2 class="section-title mb-5 pb-2 px-4">ÁREA DO INVESTIDOR</h2>
     </article>
 
     <!-- Equpie -->
-    <article class="d-flex flex-column align-items-center py-5 bg-dark-gray">
-        <h2 class="section-title mb-5 pb-2 px-4 ">EQUIPE</h2>
-        <article class="pb-5 container-fluid">
-            <div class="row textGray m-0">
-                <div class="col-1"></div>
-                <div class="col-lg-2 col-md-12 my-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Breno Tosi</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section class="d-flex flex-column align-items-center py-5 bg-dark-gray">
+        <h2 class="section-title px-4 ">EQUIPE</h2>
+    </section>
+    <article class="pb-5 container-fluid bg-dark-gray">
+        <div class="row textGray m-0">
+            <div class="col-1"></div>
+            <div class="col-xl-2 col-lg-4 col-md-12 my-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center my-2">
+                        <img src="./images/Breno.png" alt="imagem do integrante Breno" class="grupo-img borda-grupo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Breno Tosi</h5>
+                        <br>
+                        <p class="card-text text-center">FrontEnd Developer</p>
+                        <br>
+                        <div class="text-center">
+                            <a href=""><i class="fa-brands fa-twitter mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-github mx-1 icon-grupo"></i></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-2 col-md-12 my-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Gabriel Penna</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-12 my-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Luis Gustavo</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-12 mt-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Pedro Sobral</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-12 mt-3">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Vinicios Romano</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-12"></div>
-            </div>
-        </article </article>
-
-        <!-- Contato -->
-        <section class="container-fluid d-flex flex-column align-items-center py-5 bg-clear">
-            <h2 class="dark-title mb-5 pb-2 px-4">CONTATO</h2>
-        </section>
-        >
-
-        <!-- Footer -->
-        <footer class="container-fluid pt-5 pb-2 text-light">
-            <div class="row px-5">
-                <div
-                    class="col-md-4 col-sm-12 text-center footer-text d-flex flex-column align-items-center justify-content-center">
-                    <h5>Grupo POCAS</h5>
-                    <h5>FIAP Next</h5>
-                    <h5>Robocup 2022</h5>
-                </div>
-
-                <div class="col-md-4 col-sm-12 justify-content-center d-flex flex-column align-items-center">
-                    <h5 class="text-gray">Siga o Felipe nas redes sociais:</h5>
-                    <div class="d-flex mb-3">
-                        <h1 class="mx-2"><a href=""><i class="fa-brands fa-facebook"></i></a></h1>
-                        <h1 class="mx-2"><a href=""><i class="fa-brands fa-twitter"></i></a></h1>
-                        <h1 class="mx-2"><a href=""><i class="fa-brands fa-github"></i></a></h1>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 text-center">
-                    <h1 class="display-1 fiap-footer">FIAP</h1>
                 </div>
             </div>
-            <br>
-            <h6 class="text-center copyr">Copyright © 2022 Grupo Pocas All Rights Reserved</h6>
-        </footer>
+            <div class="col-xl-2 col-lg-4 col-md-12 my-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center my-2">
+                        <img src="./images/Gabriel.png" alt="imagem do integrante Gabriel" class="grupo-img borda-grupo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Gabriel Penna</h5>
+                        <br>
+                        <p class="card-text text-center">Robotics Engineer</p>
+                        <br>
+                        <div class="text-center">
+                            <a href=""><i class="fa-brands fa-twitter mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-github mx-1 icon-grupo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-12 my-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center my-2">
+                        <img src="./images/Guty.png" alt="foto do integrante Luis" class="grupo-img borda-grupo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Luis Gustavo</h5>
+                        <br>
+                        <p class="card-text text-center">BackEnd Developer</p>
+                        <br>
+                        <div class="text-center">
+                            <a href=""><i class="fa-brands fa-twitter mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-github mx-1 icon-grupo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-xl-2 col-lg-4 col-md-12 my-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center my-2">
+                        <img src="./images/Sobral.png" alt="foto do integrande Pedro" class="grupo-img borda-grupo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Pedro Sobral</h5>
+                        <br>
+                        <p class="card-text text-center">Web Designer</p>
+                        <br>
+                        <div class="text-center">
+                            <a href=""><i class="fa-brands fa-twitter mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-github mx-1 icon-grupo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-xl-2 col-lg-4 col-md-12 my-3">
+                <div class="card">
+                    <div class="d-flex justify-content-center my-2">
+                        <img src="./images/Vini.png" alt="foto do integrante Vinicios" class="grupo-img borda-grupo">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Vinicios Romano</h5>
+                        <br>
+                        <p class="card-text text-center">Analista de Dados</p>
+                        <br>
+                        <div class="text-center">
+                            <a href=""><i class="fa-brands fa-twitter mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin mx-1 icon-grupo"></i></a>
+                            <a href=""><i class="fa-brands fa-github mx-1 icon-grupo"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-2"></div>
+            <div class="col-1"></div>
+        </div>
+    </article>
+
+    <!-- Contato -->
+    <section class="container-fluid d-flex flex-column align-items-center pt-5 bg-clear" id="contato">
+        <h2 class="dark-title mb-5 pb-2 px-4">CONTATO</h2>
+    </section>
+    <article class="container-fluid pb-5 bg-clear">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 px-5 d-flex justify-content-center align-items-center mx-auto mb-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.12072704779!2d-46.654594084530665!3d-23.56410716757994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7dbf9ff57%3A0x4ca8eb5c4f7ecca9!2sFIAP!5e0!3m2!1spt-BR!2sbr!4v1664402314609!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col-lg-6 col-md-12 px-5 d-flex flex-column">
+                <div class="row">
+                    <div class="col-12 form-floating mb-2">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Lucas Silva" required>
+                        <label for="floatingInput" class="px-4">Nome Completo:</label>
+                    </div>
+                    <div class="col-12 form-floating my-2">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="lucas.silva@gmail.com">
+                        <label for="floatingInput" class="px-4">Email:</label>
+                    </div>
+                    <div class="col-12 form-floating my-2">
+                        <input type="tel" name="" id="" class="form-control" id="floatingInput" placeholder="11978521352">
+                        <label for="" class="form-label px-4">Celular: </label>
+                    </div>
+                    <div class="col-12 form-floating my-2">
+                        <textarea class="form-control" placeholder="Digite sua mensagem:" id="floatingTextarea" ></textarea>
+                        <label for="floatingTextarea" class="px-4">Digite sua mensagem: </label>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end mt-4">
+                        <button type="submit" class="btn btn-lg btn-outline-dark">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
 
 
-        <!-- JS -->
-        <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
-        <script src="./js/script.js"></script>
-        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-            </script>
+    <!-- Footer -->
+    <footer class="container-fluid pt-5 pb-2 text-light">
+        <div class="row px-5">
+            <div
+                class="col-md-4 col-sm-12 text-center footer-text d-flex flex-column align-items-center justify-content-center">
+                <h5>Grupo POCAS</h5>
+                <h5>FIAP Next</h5>
+                <h5>Robocup 2022</h5>
+            </div>
+
+            <div class="col-md-4 col-sm-12 justify-content-center d-flex flex-column align-items-center my-4">
+                <h5 class="text-gray">Siga o Felipe nas redes sociais:</h5>
+                <div class="d-flex">
+                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-facebook"></i></a></h1>
+                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-twitter"></i></a></h1>
+                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-instagram"></i></a></h1>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 text-center">
+                <h1 class="display-1 fiap-footer">FIAP</h1>
+            </div>
+        </div>
+        <br>
+        <h6 class="text-center copyr">Copyright © 2022 Grupo Pocas All Rights Reserved</h6>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="./dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
