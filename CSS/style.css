@@ -342,7 +342,7 @@ a i:hover {
 
 .accordionTitle {
     font-weight: 600;
-    font-size: 4vmin;
+    font-size: 3vmin;
     letter-spacing: 0.3rem;
 }
 
@@ -405,6 +405,29 @@ textarea {
 .border-none:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.btn-outline-info {
+    color: var(--normal-green);
+    border-color: var(--normal-green);
+    transition: .5s;
+    padding: 1rem 5rem;
+}
+
+.btn-outline-info:hover {
+    background-color: black;
+    color: var(--light-green);
+    border-color: var(--light-green);
+    transform: scale(1.2);
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.border-invest {
+    border-bottom: 1px var(--normal-green) solid;
+    margin: 0px 1rem;
 }
 
 
@@ -534,10 +557,6 @@ textarea {
 
     .img-history {
         width: 80%;
-    }
-
-    .text-gray {
-        margin-top: 2rem;
     }
 
     .p-main {
