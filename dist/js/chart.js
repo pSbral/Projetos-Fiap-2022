@@ -1,5 +1,15 @@
 let firstChart = document.getElementById('chartCrescimentoRobotica').getContext('2d')
 let secondChart = document.getElementById('chartPocas').getContext('2d')
+let fontSize
+
+function screenDetection() {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+        fontSize = 8
+    } else {
+        fontSize = 18
+    }
+}
+
 
 let chartCrescRob = new Chart(firstChart, {
     type: 'line',
@@ -34,7 +44,7 @@ let chartCrescRob = new Chart(firstChart, {
             legend: {
                 labels: {
                     font: {
-                        size: 8
+                        size: fontSize
                     }
                 }
             }
@@ -61,7 +71,7 @@ let chartCrescPocas = new Chart(secondChart, {
             legend: {
                 labels: {
                     font: {
-                        size: 8
+                        size: fontSize
                     }
                 }
             }

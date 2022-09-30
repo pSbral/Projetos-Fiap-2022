@@ -58,7 +58,7 @@
     </div>
 
     <!-- Introdução -->
-    <section class="d-flex flex-column align-items-center p-4 m-0 mt-3" id="financeiro">
+    <section class="d-flex flex-column align-items-center p-4 m-0 mt-5 pt-5" id="financeiro">
         <h2 class="section-title mb-4">FUTURO EM ROBÓTICA</h2>
 
         <div class="d-flex flex-column align-items-start col-sm-12 col-md-12 text-light text-center p-0">
@@ -93,10 +93,10 @@
 
 
     <!-- Dados financeiros -->
-    <section class="d-flex flex-column align-items-center bg-dark-gray p-4 m-0 mt-5" id="">
+    <section class="d-flex flex-column align-items-center bg-dark-gray p-4 m-0 mt-5 mb-4" id="">
         <h2 class="section-title px-3 mb-5">GRUPO POCAS</h2>
 
-        <article class="d-flex flex-column align-items-start col-sm-12 col-md-12 text-light text-center p-0">
+        <article class="d-flex flex-column align-items-start container-fluid text-light text-center p-0 mb-4">
             <p class="sigla-pocas m-0 mb-2">FPCS11</p>
             <h1 class="font-semibold titulo-socios m-0 "><strong>O que é o Grupo <span
                         class="green-animation ms-1">POCAS</span></strong>
@@ -106,52 +106,54 @@
                 considerável:</p>
         </article>
 
-        <div class="container mt-3 col-sm-12 col-md-8 p-0">
-            <canvas id="chartPocas"></canvas>
+        <div class="row container-fluid mb-4">
+            <div class="container mt-3 col-12 col-lg-8 p-0">
+                <canvas id="chartPocas"></canvas>
+            </div>
+
+
+            <article class="d-flex col-12 col-lg-4">
+                <table class="table text-light pocas-table mt-4">
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="col">Dados da Empresa - FPCS11 - Tecnologia</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-font">
+                        <tr>
+                            <th scope="row font-light">
+                                <p class="fw-light m-0 p-0">Patrimônio</p>
+                            </th>
+                            <td class="text-normal-green fw-bold">R$ 3.410,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="fw-light m-0 p-0">Cotação</p>
+                            </th>
+                            <td class="text-normal-green fw-bold">R$ 5,70</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="fw-light m-0 p-0">Lucro por Cota</p>
+                            </th>
+                            <td class="text-normal-green  fw-bold">60.000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="fw-light m-0 p-0">Alavancagem</p>
+                            </th>
+                            <td class="text-normal-green  fw-bold">R$ 500.00,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <p class="fw-light m-0 p-0">Liquidez diária</p>
+                            </th>
+                            <td class="text-normal-green fw-bold">R$ 3.000,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
         </div>
-
-
-        <article>
-            <table class="table text-light mt-4">
-                <thead>
-                    <tr>
-                        <th colspan="2" scope="col">Dados da Empresa - FPCS11 - Tecnologia</th>
-                    </tr>
-                </thead>
-                <tbody class="table-font">
-                    <tr>
-                        <th scope="row font-light">
-                            <p class="fw-light m-0 p-0">Patrimônio</p>
-                        </th>
-                        <td class="text-normal-green  fw-bold">R$ 3.410,00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p class="fw-light m-0 p-0">Cotação</p>
-                        </th>
-                        <td class="text-normal-green fw-bold">R$ 5,70</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p class="fw-light m-0 p-0">Lucro por Cota</p>
-                        </th>
-                        <td class="text-normal-green  fw-bold">60.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p class="fw-light m-0 p-0">Alavancagem</p>
-                        </th>
-                        <td class="text-normal-green  fw-bold">R$ 500.00,00</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                            <p class="fw-light m-0 p-0">Liquidez diária</p>
-                        </th>
-                        <td class="text-normal-green fw-bold">R$ 3.000,00</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
     </section>
 
 
@@ -169,17 +171,17 @@
 
         <article class="container-fluid pb-5 bg-clear">
 
-            <div class="col-lg-6 col-md-12 px-5 d-flex flex-column">
+            <div class="px-5 d-flex flex-column">
                 <div class="row">
                     <div class="col-12 form-floating mb-2">
                         <input type="text" class="form-control" id="floatingInput" placeholder="Lucas Silva" required>
                         <label for="floatingInput" class="px-4">Nome Completo:</label>
                     </div>
-                    <div class="col-12 form-floating my-2">
+                    <div class="col-12 col-xxl-6 form-floating my-2">
                         <input type="email" class="form-control" id="floatingInput" placeholder="lucas.silva@gmail.com">
                         <label for="floatingInput" class="px-4">Email:</label>
                     </div>
-                    <div class="col-12 form-floating my-2">
+                    <div class="col-12 col-xxl-6 form-floating my-2">
                         <input type="tel" name="" id="" class="form-control" id="floatingInput"
                             placeholder="11978521352">
                         <label for="" class="form-label px-4">Celular: </label>
@@ -201,35 +203,27 @@
     <!-- Footer -->
     <footer class="container-fluid pt-5 pb-2 text-light">
         <div class="row px-5">
-            <div
-                class="col-md-4 col-sm-12 text-center footer-text d-flex flex-column align-items-center justify-content-center">
-                <div class="row">
-                    <div class="footer-p col-4">
-                        <p>Grupo POCAS</p>
-                    </div>
-                    <div class="footer-p col-4">
-                        <p>FIAP Next</p>
-                    </div>
-                    <div class="footer-p col-4">
-                        <p>Robocup 2022</p>
-                    </div>
-                </div>
+            <div class="col-12 text-center footer-text d-flex justify-content-between">
+                <p class="footer-p">Grupo POCAS</p>
+                <p class="footer-p">FIAP Next</p>
+                <p class="footer-p">Robocup 2022</p>
             </div>
 
-            <div class="col-md-4 col-sm-12 justify-content-center d-flex flex-column align-items-center my-4">
-                <h5 class="footer-social-midia mb-3">Siga o Felipe nas redes sociais:</h5>
-                <div class="d-flex">
-                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-facebook"></i></a></h1>
-                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-twitter"></i></a></h1>
-                    <h1 class="mx-2"><a href=""><i class="fa-brands fa-instagram"></i></a></h1>
+            <div class="col-12 row my-5 mx-auto">
+                <div class="col-12 col-md-6">
+                    <h5 class="footer-social-midia text-center mb-3">Siga nossas reder sociais :</h5>
+                    <div class="d-flex justify-content-center">
+                        <h1 class="mx-2"><a href=""><i class="fa-brands fa-facebook"></i></a></h1>
+                        <h1 class="mx-4"><a href=""><i class="fa-brands fa-twitter"></i></a></h1>
+                        <h1 class="mx-2"><a href=""><i class="fa-brands fa-instagram"></i></a></h1>
+                    </div>
                 </div>
-            </div>
-
-            <div class="d-flex justify-content-center col-md-4 col-sm-12 ps-4 pe-2">
-                <h1 class="display-1 fiap-footer m-0 p-0">FIAP</h1>
+                <div class="col-12 col-md-6 d-flex justify-content-center ps-4 pe-2">
+                    <h1 class="display-1 fiap-footer m-0 p-0">FIAP</h1>
+                </div>
             </div>
         </div>
-        <br>
+
         <h6 class="text-center copyr mb-5">Copyright © 2022 Grupo Pocas All Rights Reserved</h6>
     </footer>
 
