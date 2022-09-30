@@ -1,0 +1,17 @@
+@import url("./style.css");
+
+.titulo-socios {
+    font-size: 4vmin;
+}
+
+.sigla-pocas {
+    color: var(--light-green);
+    letter-spacing: 0.5vmin;
+    font-size: 3vmin;
+}
+
+.p-storytelling {
+    font-size: 3vmin;
+    /* font-size: large; */
+    text-align: justify;
+}
